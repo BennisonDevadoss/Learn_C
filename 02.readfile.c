@@ -17,7 +17,7 @@ int main()
     }
 
     //read input from a file
-    fscanf(fp, "%[^\n]", ch);
+    fscanf(fp, "%[^\n]", ch);  //I don't understand %[^\n] this one: what is this %[^\n]   ?
     printf("Data_from_the_first_line %s", ch);
 
     //file close function
