@@ -6,7 +6,8 @@ int main()
     //variable declaration
     char ch[500];
     FILE *fp; //declare file pointer
-
+    
+    //file open
     fp = fopen("program.txt", "r");
 
     //this condition check file opened or not
