@@ -17,10 +17,10 @@ int main()
     }
 
     printf("enter the notes");
-    fgets(ch, sizeof(ch), stdin);
+    fgets(ch, sizeof(ch), stdin);//read input
 
     //print input to file
     fprintf(fptr, "%s", ch);
-    
+
     fclose(fptr); //file close
 }
