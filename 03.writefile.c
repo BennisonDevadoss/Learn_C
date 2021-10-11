@@ -17,7 +17,9 @@ int main()
     }
 
     printf("enter the notes");
-    fgets(ch, sizeof(ch), stdin);//read input
+    
+    //read input from user
+    fgets(ch, sizeof(ch), stdin);
 
     //print input to file
     fprintf(fptr, "%s", ch);
