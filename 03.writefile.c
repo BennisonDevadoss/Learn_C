@@ -21,5 +21,6 @@ int main()
 
     //print input to file
     fprintf(fptr, "%s", ch);
+    
     fclose(fptr); //file close
 }
