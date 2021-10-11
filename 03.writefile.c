@@ -1,5 +1,5 @@
+//this program about to file write.
 #include <stdio.h>
-
 int main()
 {
     //variable declaration
