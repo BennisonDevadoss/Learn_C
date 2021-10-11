@@ -13,7 +13,7 @@ int main()
     if (fptr == NULL)
     {
         printf("ERROR!\n");
-        printf("FILE did not created");
+        printf("File didn't created");
     }
 
     printf("enter the notes");
