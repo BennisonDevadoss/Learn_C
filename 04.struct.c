@@ -46,5 +46,5 @@ int main()
     }
 
     //memory free up
-    fclose(ptr);
+    free(ptr);
 }
