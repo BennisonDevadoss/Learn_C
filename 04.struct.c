@@ -31,17 +31,17 @@ int main()
 
     //read stuent data from user
     printf("enter student detail");
-    for (i = 0; i < n; i++)
+    for (i = 0; i < n; ++i)
     {
         scanf("%s", (ptr + i)->subject);
         scanf("%d", &(ptr + i)->mark);
     }
 
     // displaying message
-    for (i = 0; i < n; i++)
+    for (i = 0; i < n; ++i)
     {
         printf("%s\n", (ptr + i)->subject);
-        printf("%d", (ptr + i)->mark);
+        printf("%d", &(ptr + i)->mark);
         printf("\n");
     }
 
