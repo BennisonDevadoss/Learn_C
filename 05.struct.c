@@ -9,23 +9,25 @@ struct course
 int main()
 {
     struct course *ptr;
-    int noOfRecords;
+    int n, i;
     printf("Enter the number of records: ");
-    scanf("%d", &noOfRecords);
+    scanf("%d", &n);
 
     // Memory allocation for noOfRecords structures
-    ptr = (struct course *)malloc(noOfRecords * sizeof(struct course));
-    for (int i = 0; i < noOfRecords; ++i)
+    ptr = (struct course *)malloc(n * sizeof(struct course));
+
+     printf("Enter subject and marks:\n");
+    for (i = 0; i < n; ++i)
     {
-        printf("Enter subject and marks:\n");
         scanf("%s", (ptr + i)->subject);
         scanf("%d", &(ptr + i)->marks);
     }
 
     printf("Displaying Information:\n");
-    for (int i = 0; i < noOfRecords; ++i)
+    for (i = 0; i < n; ++i)
     {
-        printf("%s\t%d\n", (ptr + i)->subject, (ptr + i)->marks);
+        printf("%s\t", (ptr + i)->subject);
+        printf("%d\n", (ptr + i)->marks);
     }
 
     free(ptr);
